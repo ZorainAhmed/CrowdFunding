@@ -344,6 +344,7 @@ header {
 } */
 .container p {
     margin: 15px 0 0 0;
+    color: grey;
 }
 @media screen and (min-width: 768px) {
   .container p {
@@ -366,7 +367,7 @@ footer p {
   text-align: center;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
-  margin-bottom: 0;
+  margin-bottom: 50px;
 }
 
 .top-link {
