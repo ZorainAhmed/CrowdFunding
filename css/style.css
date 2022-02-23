@@ -4,6 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
 
 /*
 =============== 
@@ -70,7 +71,8 @@ html {
   box-sizing: border-box;
 }
 body {
-  font-family: var(--ff-secondary);
+  /* font-family: var(--ff-secondary); */
+  font-family: "Asap",sans-serif;
   color: var(--clr-grey-1);
   font-size: 0.875rem;
   background-color: #f5f5f5;
@@ -84,9 +86,9 @@ a {
 /* img:not(.logo) {
   width: 100%;
 } */
-img {
+/* img {
   display: block;
-}
+} */
 
 /* h1,
 h2,
@@ -199,7 +201,7 @@ Scroll
     margin-left: auto;
     margin-right: auto;
     padding: 0 30px;
-    
+   
 }
 
 /* navbar */
@@ -256,9 +258,11 @@ nav {
 }
 .links-container {
   height: 0;
+  position: relative;
   overflow: hidden;
   transition: var(--transition);
   border-radius: 5px;
+  z-index: 1;
 }
 .show-links {
   height: 200px;
@@ -328,8 +332,8 @@ header {
 }
 .banner {
   min-height: 10vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin: 20px;
 }
@@ -339,8 +343,7 @@ header {
   text-transform: uppercase;
 } */
 .container p {
-    margin: 25px 0 0 0;
-    margin-bottom: 1.25rem;
+    margin: 15px 0 0 0;
 }
 @media screen and (min-width: 768px) {
   .container p {
@@ -422,6 +425,9 @@ footer p {
 .box-content{
   margin: 20px;
 }
+.user__one{
+  margin-bottom: 30px;
+}
 .comment__1{
   background-color: hsl(0, 0%, 100%);
   padding: 10px;
@@ -432,8 +438,9 @@ footer p {
   height: fit-content;
   position: relative;
   word-break: break-word;
-  margin-top: 40px;
-  margin-inline: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-inline: 20%; */
 
 }
 .user__and__para{
@@ -511,7 +518,7 @@ footer p {
 }
 .minus__score{
   position: absolute;
-  top: 57px;
+  top: 46px;
   left: 16px;
   text-align: center;
 }
@@ -531,7 +538,9 @@ footer p {
   position: relative;
   word-break: break-word;
   margin-top: 10px;
-  margin-inline: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-inline: 20%; */
   display: none;
 
 }
@@ -562,7 +571,7 @@ footer p {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color:  hsl(238, 40%, 52%);
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 5px;
   padding: 10px 20px;
   text-transform: uppercase;
@@ -574,6 +583,7 @@ footer p {
   background-color: hsl(0, 0%, 100%);
   padding: 14px;
   padding-top: 8px;
+  padding-bottom: 10px;
   border: none;
   outline: none;
   border-radius: 10px;
@@ -676,13 +686,13 @@ footer p {
 }
 
 .updateBtn{
-  position: absolute;
+  position: initial;
   border: none;
   outline: none;
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color: hsl(238, 40%, 52%);
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 5px;
   padding: 8px 13px;
   text-transform: uppercase;
@@ -792,17 +802,19 @@ footer p {
 .spantext{
   color: hsl(238, 40%, 52%) !important;
 }
-
+h6{
+  font-weight: 900;
+}
 .button-1 {
-  background: #00cc99;
+  background:  hsl(176, 50%, 47%);
   border-radius: 999px;
   /* box-shadow: #00CC99 0 10px 20px -10px; */
   box-sizing: border-box;
   color: #FFFFFF;
-  cursor: pointer;
-  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  /* cursor: pointer; */
+  /* font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif; */
+  /* font-size: 16px; */
+  font-weight: 500;
   line-height: 24px;
   opacity: 1;
   outline: 0 solid transparent;
@@ -817,5 +829,5 @@ footer p {
 .disabled{
   background-color: #67727e;
   opacity: 0.5;
-  cursor: not-allowed;
+  cursor: not-allowed !important;
 }

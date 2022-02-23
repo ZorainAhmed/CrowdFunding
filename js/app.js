@@ -108,7 +108,7 @@ function addComment() {
 
     // name: username
     let name = document.createElement('span');
-    name.innerHTML = 'juliusomo';
+    name.innerHTML = 'Zorain';
     name.className = 'commentBoxName';
 
     // you: 'you'
@@ -217,12 +217,8 @@ function addComment() {
 
 }
 
-
-
-
-
-function hasClass(elem, className) {
-    return elem.className.split(' ').indexOf(className) > -1;
+function hasClass(e, className) {
+    return e.className.split(' ').indexOf(className) > -1;
 }
 
 document.querySelector('.user__one').addEventListener('click', function (e) {
@@ -278,12 +274,8 @@ document.querySelector('.user__one').addEventListener('click', function (e) {
             // add updated content to dom
             let contentDiv = document.querySelector('.contentDiv');
             contentDiv.append(newParagraph.innerHTML);
-
-            
         })
-
     }
-
 })
 
 function showAlertBox() {
