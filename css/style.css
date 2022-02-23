@@ -405,6 +405,7 @@ footer p {
 .title{
   margin: 20px;
   border: 1px solid;
+  border-color: lightgray;
   border-radius: 8px;
 }
 .about{
