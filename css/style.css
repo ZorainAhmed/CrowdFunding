@@ -268,7 +268,7 @@ nav {
   height: 200px;
 }
 .links a {
-  background: var(--clr-white);
+  background: var(--clr-grey-10);
   color: black;
   letter-spacing: var(--spacing);
   display: block;
@@ -357,7 +357,10 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-
+.modal-title span {
+  color: var(--clr-secondary);
+  font-size: 12px;
+}
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
@@ -404,6 +407,12 @@ footer p {
 }
 .title{
   margin: 20px;
+  border: 1px solid;
+  border-color: lightgray;
+  border-radius: 8px;
+}
+.modal-title{
+  margin: auto;
   border: 1px solid;
   border-color: lightgray;
   border-radius: 8px;
@@ -807,6 +816,19 @@ footer p {
 h6{
   font-weight: 900;
 }
+.progress-bar{
+  background:  hsl(176, 50%, 47%);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .vl {
+    border-left: 1px solid lightgray;
+    height: 65px;
+  }
+}
+
+
 .button-1 {
   background:  hsl(176, 50%, 47%);
   border-radius: 999px;
