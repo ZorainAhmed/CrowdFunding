@@ -359,13 +359,15 @@ header {
 }
 /* sections and title */
 
-.title span {
+.title span#left {
   color: var(--clr-secondary);
 }
-.modal-title span {
+
+.modal-title span#left {
   color: var(--clr-secondary);
   font-size: 12px;
 }
+
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
@@ -881,4 +883,15 @@ h6{
   opacity: 0.5;
   pointer-events: none;
   cursor: not-allowed !important;
+}
+.modal-action{
+  display: none;
+}
+.active .modal-action{
+  display: block;
+  
+}
+.active .modal-title{
+  border-width: 2px;
+  border-color: hsl(176, 50%, 47%);
 }

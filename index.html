@@ -39,7 +39,7 @@
                                 <div class="row box-content justify-content-end">
                                     <h6>
                                         <label class="radio">
-                                            <input type="radio" name="optradio" onclick="ShowAndHideDiv()"> 
+                                            <input type="radio" name="optradio"> 
                                         </label> 
                                         Pledge with No Reward
                                     </h6>   
@@ -53,7 +53,7 @@
                                          
                                     </div>
                                     
-                                    <div class="col-auto pt-4">
+                                    <div class="col-auto pt-4 modal-action">
                                         <button type="button" class="button-1"> Continue</button>
                                     </div>
                                 </div>
@@ -66,14 +66,14 @@
                                     <div class="col-auto align-self-sm-center">
                                         <h6>
                                             <label class="radio">
-                                                <input type="radio" name="optradio" > 
+                                                <input type="radio" name="optradio" value="bamboo"> 
                                             </label> 
-                                            Bamboo Stand <span>Pledge $25 or more</span>
+                                            Bamboo Stand <span style="color: var(--clr-secondary);">Pledge $25 or more</span>
                                         </h6>
                                     </div>
                                     
                                     <div class="col-auto me-auto">
-                                        <h5>101 <span id="left">left</span></h5>
+                                        <h5><span class="bamboo-left">101</span> <span id="left">left</span></h5>
                                     </div>
                                     <p>
                                         You get an ergonomic stand made of natural
@@ -82,7 +82,7 @@
                                         list.
                                     </p>
                                     
-                                    <div class="col-auto pt-4">
+                                    <div class="col-auto pt-4 modal-action">
                                         <input type="text" class="pledge-input" placeholder="$25">
                                         <button type="button" class="button-1"> Continue</button>
                                     </div>
@@ -96,21 +96,21 @@
                                     <div class="col-auto align-self-sm-center">
                                         <h6>
                                             <label class="radio">
-                                                <input type="radio" name="optradio" > 
+                                                <input type="radio" name="optradio" value="blackedition"> 
                                             </label> 
-                                            Black Edition Stand <span>Pledge $75 or more</span>
+                                            Black Edition Stand <span style="color: var(--clr-secondary);">Pledge $75 or more</span>
                                         </h6>
                                     </div>
                                     
                                     <div class="col-auto me-auto">
-                                        <h5>64 <span id="left">left</span></h5>
+                                        <h5><span class="blackedition-left">64</span> <span id="left">left</span></h5>
                                     </div>
                                     <p>
                                        You get a Black Edition computer stand and a personal thank you.
                                        You'll be added to our Backer member list. Shipping is included. 
                                     </p>
                                     
-                                    <div class="col-auto pt-4">
+                                    <div class="col-auto pt-4 modal-action">
                                         <input type="text" class="pledge-input" placeholder="$75">
                                         <button type="button" class="button-1"> Continue</button>
                                     </div>
@@ -126,7 +126,7 @@
                                             <label class="radio">
                                                 <input type="radio" name="optradio" > 
                                             </label> 
-                                            Mahogany Special Edition <span>Pledge $200 or more</span>
+                                            Mahogany Special Edition <span style="color: var(--clr-secondary);">Pledge $200 or more</span>
                                         </h6>
                                     </div>
                                     
@@ -138,8 +138,7 @@
                                        and a personal thank you. You'll be added to our Backer 
                                        member list. Shipping is included.
                                     </p>
-                                    
-                                    <div class="col-auto pt-4 ">
+                                    <div class="col-auto pt-4 modal-action">
                                         <input type="text" class="pledge-input disabled" placeholder="$200">
                                         <button type="button" class="button-1 disabled"> Continue</button>
                                     </div>
@@ -213,13 +212,13 @@
          <div class="banner-wrap">
             <div class="row banner pt-5">
                 <div class="col-md-4 col-12">
-                    <h3 style="font-weight: bolder;">$89,914</h3>
+                    <h3 style="font-weight: bolder;" id="currentBacked">$89,914</h3>
                     <p>
                         of $100,000 backed
                     </p>
                 </div>
                 <div class="col-md-4 col-12 vl">
-                    <h3 style="font-weight: bolder;">5,007</h3>
+                    <h3 id="totalBackers" style="font-weight: bolder;">5,007</h3>
                     <p>
                         total backers
                     </p>
@@ -264,7 +263,7 @@
                             <h6>Bamboo <span>Stand</span></h6>
                         </div>
                         <div class="col-auto">
-                            <span>Pledge $25 or more</span>
+                            <span style="color: var(--clr-secondary);">Pledge $25 or more</span>
                         </div>
                         <div class="col-auto"> 
                             <p>
@@ -276,7 +275,7 @@
                         </div>
                         
                         <div class="col-auto me-auto pt-4">
-                            <h1>101<span id="left">left</span></h1>
+                            <h1><span class="bamboo-left">101</span><span id="left">left</span></h1>
                         </div>
                         <div class="col-auto pt-4">
                             <button type="button"  data-bs-toggle="modal" data-bs-target="#pledge" class="button-1"> Select Reward</button>
@@ -290,7 +289,7 @@
                             <h6>Black Edition <span>Stand</span></h6>
                         </div>
                         <div class="col-auto">
-                            <span>Pledge $75 or more</span>
+                            <span style="color: var(--clr-secondary);">Pledge $75 or more</span>
                         </div>
                         <div class="col-auto"> 
                             <p>
@@ -299,7 +298,7 @@
                             </p>
                         </div>
                         <div class="col-auto me-auto pt-4">
-                            <h1>64 <span id="left">left</span></h1>
+                            <h1><span class="blackedition-left">64</span> <span id="left">left</span></h1>
                         </div>
                         <div class="col-auto pt-4">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#pledge" class="button-1"> Select Reward</button>
@@ -313,7 +312,7 @@
                             <h6>Mahogany <span>Special</span></h6>
                         </div>
                         <div class="col-auto">
-                            <span>Pledge $200 or more</span>
+                            <span style="color: var(--clr-secondary);">Pledge $200 or more</span>
                         </div>
                         <div class="col-auto"> 
                             <p>
@@ -479,7 +478,8 @@
       <i class="fas fa-arrow-up"></i>
     </a> -->
     <!-- javascript -->
-    <script src="./js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

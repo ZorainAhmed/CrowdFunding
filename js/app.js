@@ -322,11 +322,43 @@ function bookmark(a) {
 	return false;
 }
 
-function ShowAndHideDiv() {
-    var radioChecked = document.querySelector('input[name = "optradio"]:checked');
-    if(radioChecked != null){ 
-        alert(radioChecked.value); 
-    } else if(radioChecked === null){
-        alert('Nothing checked');
-    }
+// function ShowAndHideDiv() {
+//     let radioChecked = document.querySelector('input[name = "optradio"]:checked');
+//     if(radioChecked != null){ 
+//         //alert(radioChecked.value); 
+//         let modalParent = document.querySelector('.model-title').parentElement;
+//         alert(modalParent);
+//     } else if(radioChecked === null){
+//         alert('Nothing checked');
+//     }
+// }
+
+$('input[name="optradio"]').click(function(){
+    $('.modal-title-wrap').removeClass('active');
+    $(this).parents('.modal-title-wrap').addClass('active');
+})
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
+
+$('.modal-title-wrap .button-1').click(function(){
+    console.log('clicked')
+    let currentBacked = $('#currentBacked').html();
+    currentBacked = currentBacked.replace(/\D/g, "");
+    console.log(currentBacked);
+    let submittedValue = $('.modal-title-wrap.active').find('.pledge-input').val();
+    currentBacked = parseInt(currentBacked)+parseInt(submittedValue);
+    console.log(parseInt(numberWithCommas(parseInt($('#totalBackers').html().replace(/\D/g, "")))));
+    $('#currentBacked').html("$"+numberWithCommas(currentBacked));
+
+    $('#totalBackers').html(numberWithCommas( parseInt($('#totalBackers').html().replace(/\D/g, ""))+1 )) 
+    
+    
+    let selectedValue = $('.modal-title-wrap.active').find('input[type="radio"]').val();
+    let selectedTotalNumbersEl = $('.'+selectedValue+"-left");
+    selectedTotalNumbersEl.html(parseInt(selectedTotalNumbersEl.html())-1)
+
+    $('.btn-close').click();
+
+})
