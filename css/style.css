@@ -892,6 +892,8 @@ h6{
   
 }
 .active .modal-title{
-  border-width: 2px;
+  border-width: 1px;
   border-color: hsl(176, 50%, 47%);
+  box-shadow: #49a6e9;
+  transition: 0.3s;
 }
