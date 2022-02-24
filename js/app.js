@@ -321,3 +321,12 @@ function bookmark(a) {
 	}
 	return false;
 }
+
+function ShowAndHideDiv() {
+    var radioChecked = document.querySelector('input[name = "optradio"]:checked');
+    if(radioChecked != null){ 
+        alert(radioChecked.value); 
+    } else if(radioChecked === null){
+        alert('Nothing checked');
+    }
+}

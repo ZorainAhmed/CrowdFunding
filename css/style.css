@@ -190,6 +190,10 @@ main {
   display: grid;
   place-items: center;
 }
+#left{
+  font-size: 14px;
+  color: black;
+}
 /*
 =============== 
 Scroll
@@ -851,8 +855,30 @@ h6{
   word-break: break-word;
   border: 0;
 }
+.pledge-input{
+  /* color:  hsl(176, 50%, 47%); */
+  border-radius: 20px ;
+  /* box-shadow: #00CC99 0 10px 20px -10px; */
+  box-sizing: border-box;
+  background: #FFFFFF;
+  /* cursor: pointer; */
+  /* font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif; */
+  /* font-size: 16px; */
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 1;
+  outline: 1 solid lightgray;
+  padding: 4px 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  /* border: 0; */
+}
 .disabled{
   background-color: #67727e;
   opacity: 0.5;
+  pointer-events: none;
   cursor: not-allowed !important;
 }

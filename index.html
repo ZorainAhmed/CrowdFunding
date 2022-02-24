@@ -37,23 +37,24 @@
                         <div class="modal-title-wrap pt-3 pb-3">
                             <div class="modal-title">
                                 <div class="row box-content justify-content-end">
-                                    <div class="col-auto align-self-sm-center">
-                                        <h6>
-                                            <label class="radio">
-                                                <input type="radio" name="optradio"> 
-                                            </label> 
-                                            Pledge with No Reward
-                                        </h6>
+                                    <h6>
+                                        <label class="radio">
+                                            <input type="radio" name="optradio" onclick="ShowAndHideDiv()"> 
+                                        </label> 
+                                        Pledge with No Reward
+                                    </h6>   
+                                    <div class="col-auto me-auto">
+                                        <p>
+                                            Choose to support us without
+                                            a reward if you simply believe in our 
+                                            project. As a backer, you will be signed up to receive
+                                            products updates via email. 
+                                         </p>
+                                         
                                     </div>
-                                    <p>
-                                       Choose to support us without
-                                       a reward if you simply believe in our 
-                                       project. As a backer, you will be signed up to receive
-                                       products updates via email. 
-                                    </p>
                                     
                                     <div class="col-auto pt-4">
-                                        <button type="button" class="button-1"> Select Reward</button>
+                                        <button type="button" class="button-1"> Continue</button>
                                     </div>
                                 </div>
                                 
@@ -72,7 +73,7 @@
                                     </div>
                                     
                                     <div class="col-auto me-auto">
-                                        <h5>101</h5>
+                                        <h5>101 <span id="left">left</span></h5>
                                     </div>
                                     <p>
                                         You get an ergonomic stand made of natural
@@ -82,7 +83,8 @@
                                     </p>
                                     
                                     <div class="col-auto pt-4">
-                                        <button type="button" class="button-1"> Select Reward</button>
+                                        <input type="text" class="pledge-input" placeholder="$25">
+                                        <button type="button" class="button-1"> Continue</button>
                                     </div>
                                 </div>
                                 
@@ -101,7 +103,7 @@
                                     </div>
                                     
                                     <div class="col-auto me-auto">
-                                        <h5>64</h5>
+                                        <h5>64 <span id="left">left</span></h5>
                                     </div>
                                     <p>
                                        You get a Black Edition computer stand and a personal thank you.
@@ -109,7 +111,8 @@
                                     </p>
                                     
                                     <div class="col-auto pt-4">
-                                        <button type="button" class="button-1"> Select Reward</button>
+                                        <input type="text" class="pledge-input" placeholder="$75">
+                                        <button type="button" class="button-1"> Continue</button>
                                     </div>
                                 </div>
                                 
@@ -128,7 +131,7 @@
                                     </div>
                                     
                                     <div class="col-auto me-auto">
-                                        <h5>101</h5>
+                                        <h5>0 <span id="left">left</span></h5>
                                     </div>
                                     <p>
                                        You'll get two Special Edition Mahogany stands, a Backer T-Shirt 
@@ -137,7 +140,8 @@
                                     </p>
                                     
                                     <div class="col-auto pt-4 ">
-                                        <button type="button" class="button-1 disabled"> Select Reward</button>
+                                        <input type="text" class="pledge-input disabled" placeholder="$200">
+                                        <button type="button" class="button-1 disabled"> Continue</button>
                                     </div>
                                 </div>
                                 
@@ -147,7 +151,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="cancel" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
                     
                 </div>
                 </form>
@@ -272,7 +276,7 @@
                         </div>
                         
                         <div class="col-auto me-auto pt-4">
-                            <h1>101</h1>
+                            <h1>101<span id="left">left</span></h1>
                         </div>
                         <div class="col-auto pt-4">
                             <button type="button"  data-bs-toggle="modal" data-bs-target="#pledge" class="button-1"> Select Reward</button>
@@ -290,14 +294,12 @@
                         </div>
                         <div class="col-auto"> 
                             <p>
-                                You get an ergonomic stand made of natural
-                                bamboo. You've helped us launch our promotional
-                                campaign, and you'll be added to a special Backer member
-                                list. 
+                                You get a Black Edition computer stand and a personal thank you.
+                                You'll be added to our Backer member list. Shipping is included. 
                             </p>
                         </div>
                         <div class="col-auto me-auto pt-4">
-                            <h1>101</h1> 
+                            <h1>64 <span id="left">left</span></h1>
                         </div>
                         <div class="col-auto pt-4">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#pledge" class="button-1"> Select Reward</button>
@@ -315,14 +317,13 @@
                         </div>
                         <div class="col-auto"> 
                             <p>
-                                You get an ergonomic stand made of natural
-                                bamboo. You've helped us launch our promotional
-                                campaign, and you'll be added to a special Backer member
-                                list. 
+                                You'll get two Special Edition Mahogany stands, a Backer T-Shirt 
+                                and a personal thank you. You'll be added to our Backer 
+                                member list. Shipping is included.
                             </p>
                         </div>
                         <div class="col-auto me-auto pt-4">
-                            <h1>101</h1>
+                            <h1>0 <span id="left">left</span></h1>
                         </div>
                         <div class="col-auto pt-4">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#pledge" class="button-1 disabled"> Select Reward</button>
